@@ -171,7 +171,9 @@ public class ClanChatManager {
 	}
 
 	public static void join(Player player, String channel) {
-		if(channel == null || channel.equals("") || channel.equals("null")) {
+
+		System.out.println("Joining Channel: " + channel);
+		if(channel == null || channel.isEmpty() || channel.equals("null")) {
 			return;
 		}
 		if (player.getCurrentClanChat() != null) {

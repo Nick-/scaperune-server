@@ -359,7 +359,7 @@ public class Player extends Character {
 		//Packets
 		getPacketSender().sendMapRegion().sendDetails(); //Map region, player index and player rights
 		getPacketSender().sendTabs(); //Client sideicons
-		getPacketSender().sendMessage("Welcome to OSRS Pk! We hope you enjoy your stay.");
+		getPacketSender().sendMessage("Welcome to ScapeRune.");
 
 		//Send levels and total exp
 		long totalExp = 0;
@@ -539,7 +539,7 @@ public class Player extends Character {
 	private PlayerRights rights = PlayerRights.PLAYER;
 	private PlayerStatus status = PlayerStatus.NONE;
 	private ClanChat currentClanChat;
-	private String clanChatName = "Oak";
+	private String clanChatName;
 	private Dialogue dialogue;
 	private Shop shop;
 	private int interfaceId = -1, walkableInterfaceId = -1, multiIcon;
